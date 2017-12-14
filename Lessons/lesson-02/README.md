@@ -24,30 +24,22 @@ DS | Lesson 2
 - Create, open and create and iPython Notebook
 - Have completed python pre-work
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-
-- Review [Unit Project 1](../../projects/unit-projects/project-1/README.md)
-- Copy and modify the [lesson slide deck](./assets/slides/slides-2.md)
-- Add to the "Additional Resources" section for this lesson
-
-
 ### LESSON GUIDE
-| TIMING  | TYPE  | TOPIC  |
-|:-:|---|---|
-| 5 min  | [Opening](#opening)  | Lesson Objectives  |
-| 10 min  | [Introduction](#introduction1)   | The why's and how's of a good question |
-| 10 min  | [Demo](#demo1)  | Diagraming a high quality aim |
-| 10 min  | [Lecture](#lecture1)  | Types of datasets |
-| 10 min | [Guided Practice](#guidedpractice)  | Write a research question with raw data |
-| 5 min  | [Knowledge Check](#review1)  | Section 1 Review |
-| 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse |
-| 10 min | [Demo](#demo2)  | Walkthrough Acquire and Parse with Pandas |
-| 30 min | [Codealong](#codealong)  | Pandas Intro |
-| 5 min  | [Introduction](#introduction3)  | Lab Walkthrough  |
-| 20 min  | [Independent Practice](#lab)  | Lesson 2 lab |
-| 10 min  | [Conclusion](#conclusion)  | Review lab and lesson objectives |
-| 15 min  | [Wrap-up](#wrapup)  | Unit 1, project, where we're headed |
+| TIMING | TYPE                               | TOPIC                                    |
+| :----: | ---------------------------------- | ---------------------------------------- |
+| 5 min  | [Opening](#opening)                | Lesson Objectives                        |
+| 10 min | [Introduction](#introduction1)     | The why's and how's of a good question   |
+| 10 min | [Demo](#demo1)                     | Diagraming a high quality aim            |
+| 10 min | [Lecture](#lecture1)               | Types of datasets                        |
+| 10 min | [Guided Practice](#guidedpractice) | Write a research question with raw data  |
+| 5 min  | [Knowledge Check](#review1)        | Section 1 Review                         |
+| 5 min  | [Introduction](#introduction2)     | Datascience workflow steps 2. Acquire and 3. Parse |
+| 10 min | [Demo](#demo2)                     | Walkthrough Acquire and Parse with Pandas |
+| 30 min | [Codealong](#codealong)            | Pandas Intro                             |
+| 5 min  | [Introduction](#introduction3)     | Lab Walkthrough                          |
+| 20 min | [Independent Practice](#lab)       | Lesson 2 lab                             |
+| 10 min | [Conclusion](#conclusion)          | Review lab and lesson objectives         |
+| 15 min | [Wrap-up](#wrapup)                 | Unit 1, project, where we're headed      |
 
 ---
 
@@ -97,15 +89,11 @@ Let's break this down further:
 <a name="demo1"></a>
 ## Demo: Diagraming an aim (5 mins)
 
-> Instructors: You do not need the actual dataset for this exercise.
-
 Example aim:
 Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from the cross-sectional NHANES 2007-2010, we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar-sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food.
 
 Hypothesis: Children will be more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never.
 > Source: From Dr. Amy Roberts' Dissertation
-
-> Instructor Note: For each of these, give one 1 example and ask the class to id others.  
 
 1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010, we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar-sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Our hypothesis is that children will be **more likely to meet their recommended intake level when a food is** _always_ **available in their home** (compared to rarely or never).
     - How data was collected is indicated:
@@ -139,8 +127,6 @@ Which of the following questions uses the SMART framework? Why? What is missing?
 
 1. I am looking to see if there is an association with number of passengers with carry on luggage and delayed take-off time.
 2. Determine if the number of passengers on JetBlue, Delta, and United domestic flights with carry-on luggage is associated with delayed take-off time using data taken from flightstats.com from January 2015- December 2015.
-
-> Instructor Note: Students do not need to see the data at this point in order to answer the question - have them focus on whether the questions use the SMART framework.
 
 
 #### Why data types matter
@@ -237,8 +223,6 @@ Before and after you acquire your data, you also want to make sure you understan
 Data dictionaries are often our primary source to help judge the quality of our data and also to understand how it is coded. If our gender variables are coded 0 and 1, how do we know which is male and which is female? Your data dictionary! Is your currency variable coded in dollars or euros? Data dictionary!
 
 ##### Data Dictionary Examples
-> Instructor Note: Here you should show a few examples from Kaggle or your own work (i.e. the basic Titanic example from above or any more elaborate ones).
-
 Data dictionaries are also where you'll identify any requirements, assumptions, and constraints of your data. Note that you should never assume that a pre-existing data dictionary is complete. It is often going to be up to you to test your assumptions and add to your dictionary.
 
 **Check:** What is a 'data dictionary' and what is it used for? Why?
@@ -246,8 +230,6 @@ Data dictionaries are also where you'll identify any requirements, assumptions, 
 
 <a name="codealong"></a>
 ## Codealong- Numpy and Pandas intro (30 minutes)
-> Instructor Note: See [NumPy & Pandas notebook](./code/numpy-and-pandas.ipynb)
-
 What is Numpy and Pandas?
 Pandas is built on Python. In Numpy, we use arrays. With arrays you can do:
 
@@ -258,11 +240,7 @@ Pandas uses data structures that will look more familiar to folks who have used 
 
 Similarly, you can select pieces of data, do basic operations, and calculate summary statistics. Let's see some examples:
 
-> Instructor's Note: View [Examples from the Sample Notebook](./code/numpy-and-pandas.ipynb)
-
 Additionally, we often have to merge data together, correct missing data, and plot our findings. Let's see some examples of each of these:
-
-> Instructor's Note: View [Examples from the Sample Notebook](./code/numpy-and-pandas.ipynb)
 
 **Check:** What is a 'dataframe' and when would you use one?
 
@@ -282,8 +260,7 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 <a name="lab"></a>
 ## Lesson 2 Lab (20 min)
-> Instructor Note: Have students walk through each question within the [Lesson 2 Lab](./code/starter-code/starter-code-2.ipynb).
-> Instructor Note: If time, [go over solutions](./code/solution-code/solution-code-2.ipynb)
+
 
 
 <a name="conclusion"></a>
@@ -291,8 +268,6 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 - Review solutions & questions from lab
 - Review objectives from class
-
-> Instructor Note: Ask students to generate a list of the major takeaways
 
 <a name="wrapup"></a>
 ## Unit 1, project, where we're headed (15 mins)
@@ -304,8 +279,8 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 ***
 
 ### BEFORE NEXT CLASS
-|   |   |
-|---|---|
+|                       |                                          |
+| --------------------- | ---------------------------------------- |
 | **UPCOMING PROJECTS** | [Unit Project 1](../../projects/unit-projects/project-1/README.md) |
 
 
